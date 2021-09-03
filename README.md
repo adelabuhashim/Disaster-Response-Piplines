@@ -24,7 +24,7 @@ to run the ETL Pupeline you need  three command line arguments:
 - disaster_categories.csv file.
 - The DataBaseName.
 ```bash
-python -m process_data disaster_categories.csv disaster_categories.csv DisasterResponse
+python -m process_data disaster_messages.csv disaster_categories.csv DisasterResponse
 ```
 
    - Loading the messages and categories datasets.
