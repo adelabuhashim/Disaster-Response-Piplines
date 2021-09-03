@@ -19,8 +19,12 @@ pip install -r requirements.txt
 
 There are three components on this project. 
 ### 1. ETL Pipeline
+to run the ETL Pupeline you need  three command line arguments:
+- disaster_messages.csv file.
+- disaster_categories.csv file.
+- The DataBaseName.
 ```bash
-process_data.py
+python -m process_data disaster_categories.csv disaster_categories.csv DisasterResponse
 ```
 
    - Loading the messages and categories datasets.
