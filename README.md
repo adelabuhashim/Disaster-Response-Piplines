@@ -1,7 +1,7 @@
 # Disaster-Response-Piplines
 Analyzing disaster data from Figure Eight to build a model for an API that classifies disaster messages.
 
-
+![app](/app/app.jpg)
 
 ## Installation
 
@@ -48,6 +48,6 @@ python -m train_classifier ../data/DisasterResponse.db model.pkl
 - Run the following command in the app's directory to run your web app.
     `python run.py`
 
-- Go to http://0.0.0.0:3001/
+- Go to http://127.0.0.1:5000/
 
 
