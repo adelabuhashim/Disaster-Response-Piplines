@@ -34,7 +34,7 @@ python -m process_data disaster_messages.csv disaster_categories.csv DisasterRes
 
 ### 2. ML Pipeline
 ```bash
-train_classifier.py
+python -m train_classifier ../data/DisasterResponse.db model.pkl
 ```
    - Loading data from the SQLite database.
    - Splitting the dataset into training and test sets.
@@ -45,5 +45,9 @@ train_classifier.py
 
 
 ### 3. Flask Web App
+- Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+- Go to http://0.0.0.0:3001/
 
 
