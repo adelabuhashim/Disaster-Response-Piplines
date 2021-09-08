@@ -3,6 +3,41 @@ Analyzing disaster data from Figure Eight to build a model for an API that class
 
 ![app](/app/app.jpg)
 
+## Acknowledgement
+
+* UDACITY (DSND).
+* FIGUREIGHT (Disaster Response Data).
+
+## Motivation
+
+
+In this project, I worked worked with a lot of exciting topics, like:
+- ETL Pipeline (Pandas-Numpy ...etc).
+- NLP (NLTK).
+- ML Pipeline (SKLearn).
+- Delpoyment (Flask).
+- Relational Databases (SQLite).
+
+
+## File Description
+
+
+* app folder:
+     - **run.py**: we app intialzaton.
+* data folder:
+     - **check_db_results.ipynb**: to check the db contents.
+     - **disaster_categories.csv**: data to process.
+     - **disaster_messages.csv**: data to process.
+     - **DisasterResponse.db**: resulted db file (from ETL).
+     - **process_data.py**: ETL pipeline py file.
+* models folder:
+     - **model.pkl**: classification model.
+     - **train_classifier.py**: ML pipeline.
+     - **disaster_messages.csv**: data to process.
+* ML Piplene Notebook.
+* ETL Piplene Notebook.
+
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the libraries in requirments file.
@@ -11,7 +46,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the lib
 pip install -r requirements.txt
 ```
 
-## Usage
+
 
 
 

@@ -38,8 +38,11 @@ def load_data(messages_filepath, categories_filepath):
     
     for column in categories:
         categories[column] = categories[column].apply(binary_conversion)
-     
     
+    # convert related column to binary
+    categories['related'] = categories['related'].astype('str').str.replace('2', '1')
+    categories['related'] = categories['related'].astype('int')
+        
     # drop the original categories column from `df`
     df.drop(columns='categories', inplace=True)
 

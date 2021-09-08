@@ -89,7 +89,11 @@ def build_model():
     ('tfidf', TfidfTransformer()),
     ('clf', MultiOutputClassifier(DecisionTreeClassifier()))
     ])
-    return pipeline
+    parameters = {'clf__estimator__max_depth': [10, 50, None],
+              'clf__estimator__min_samples_leaf':[2, 5, 10]}
+
+    cv = GridSearchCV(pipeline, parameters)
+    return cv
 
 def evaluate_model(model, X_test, Y_test, category_names):
     """
